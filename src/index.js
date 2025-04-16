@@ -4,6 +4,7 @@ const app = express();
 const port = 3000;
 const videojuegoRoutes = require("./routes/videojuegosRoutes");
 const mongoose = require("mongoose");
+const authRoutes = require("./routes/autenticacion");
 require('dotenv').config();
 
 app.use(parser.urlencoded({ extended: false })); // permite leer los datos que vienen en la petición
