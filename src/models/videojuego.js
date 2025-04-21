@@ -25,7 +25,3 @@ const videojuegoSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Videojuego', videojuegoSchema);
-
-
-
-

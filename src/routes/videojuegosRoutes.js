@@ -4,7 +4,7 @@ const router = express.Router();
 const videojuegoSchema = require('../models/videojuego'); 
 
 // Crear un videojuego
-router.post('/videojuegos', async (req, res) => {
+router.post('/videojuegos', verifyToken, (req, res) => {
     const videojuego = videojuegoSchema(req.body);
     videojuego
         .save()
@@ -13,7 +13,7 @@ router.post('/videojuegos', async (req, res) => {
 });
 
 // Obtener todos los videojuegos
-router.get('/videojuegos', async (req, res) => {
+router.get('/videojuegos', verifyToken, (req, res) => {
     videojuegoSchema.find()
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error }));

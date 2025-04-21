@@ -6,7 +6,6 @@ const userRoutes = require("./routes/authentication");
 const videojuegoRoutes = require("./routes/videojuegosRoutes");
 const plataformaRoutes = require("./routes/videojuegosRoutes"); 
 const mongoose = require("mongoose");
-const authRoutes = require("./routes/autenticacion");
 require('dotenv').config();
 app.use(parser.urlencoded({ extended: false })); 
 app.use(parser.json()); 
