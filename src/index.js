@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 const userRoutes = require("./routes/authentication");
 const videojuegoRoutes = require("./routes/videojuegosRoutes");
-const plataformaRoutes = require("./routes/videojuegosRoutes"); 
+const plataformaRoutes = require("./routes/plataformaRoutes"); 
 const mongoose = require("mongoose");
 require('dotenv').config();
 app.use(parser.urlencoded({ extended: false })); 

@@ -12,4 +12,5 @@ const plataformaSchema = mongoose.Schema({
     juegos:[{type: mongoose.Schema.Types.ObjectId, ref:'Videojuego'}]
 
 });
-module.exports = mongoose.model('Videojuego', videojuegoSchema); 
+
+module.exports = mongoose.model('Plataforma', plataformaSchema); 

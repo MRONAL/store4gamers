@@ -1,7 +1,7 @@
-const express = require('express');
-const verifyToken = require('./validate_token');
-const router = express.Router();
-const videojuegoSchema = require('../models/videojuego'); 
+const express = require('express');                         
+const verifyToken = require('./validate_token');            
+const router = express.Router();                            
+const videojuegoSchema = require('../models/videojuego');   
 
 // Crear un videojuego
 router.post('/videojuegos', verifyToken, (req, res) => {
