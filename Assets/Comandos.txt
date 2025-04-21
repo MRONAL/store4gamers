@@ -1,0 +1,37 @@
+Crear un usuario:
+(POST, /signup)
+{
+    "usuario":"Loco",
+    "correo":"loco@gmail.com",
+    "clave":"123"
+}
+
+
+Crear un videojuego:
+(POST, Body, raw, Json)
+{
+    "codigo":"",
+    "titulo":"",
+    "genero":"",
+    "precio": ,
+    "desarrolladora": 
+}
+
+
+Obtener TODOS los videojuegos:
+(GET, api/videojuegos)
+Por ID: ingresar la id en value
+
+
+Actualizar datos de un videojuego:
+(PUT, /videojuegos/:id)
+Body:
+{
+    "titulo":"",
+    "genero":"" 
+}
+
+
+Eliminar un videojuego:
+(DELETE, /videojuegos/:id)
+solo es ingresar el id del videojuego en value en la seccion de params
