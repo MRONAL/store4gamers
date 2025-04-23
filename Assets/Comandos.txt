@@ -1,9 +1,9 @@
 Crear un usuario:
 (POST, /signup)
 {
-    "usuario":"Loco",
-    "correo":"loco@gmail.com",
-    "clave":"123"
+    "usuario":"",
+    "correo":"",
+    "clave":""
 }
 
 
